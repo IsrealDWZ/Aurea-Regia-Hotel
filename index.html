@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bookings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff8a30;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        #hero {
+            background-image: url('images/background1.png');
+            background-size: cover;
+            background-position: center center;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #3519d1;
+            color: #fbfaff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #8fcf20;
+            color: #ffffff;
+        }
+
+        section {
+            padding: 2rem;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #about {
+            background-color: #e8f4fc;
+            border: 2px solid #ffffff;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 2rem auto;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        #rooms {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .room {
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .room:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .room img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        #contact {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Bookings</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#poolside">Poolside</a>
+            <a href="#dining">Dining</a>
+            <a href="#massage-spa">Massage Spa</a>
+            <a href="#party-area">Party Area</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to Our Hotel</h2>
+            <p>Luxury accommodations for your perfect getaway.</p>
+            <a href="#rooms" class="button">Browse Rooms</a>
+        </section>
+
+        <section id="about">
+            <h2>About Our Hotel</h2>
+            <p>Experience unmatched comfort and luxury at our hotel. With world-class amenities, exquisite dining options, and exceptional service, your stay will be unforgettable.</p>
+            <p>We offer a range of rooms and suites designed to suit every traveler's needs.</p>
+        </section>
+
+        <section id="rooms">
+            <div class="room">
+                <img src="images/deluxe-room.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Enjoy a spacious room with modern amenities and a cozy atmosphere.</p>
+                <a href="deluxe-room.html" class="button">View Details</a>
+            </div>
+            <div class="room">
+                <img src="images/executive-suite.jpg" alt="Executive Suite">
+                <h3>Executive Suite</h3>
+                <p>Indulge in luxury with a separate living area and stunning views.</p>
+                <a href="executive-suite.html" class="button">View Details</a>
+            </div>
+            <div class="room">
+                <img src="images/family-room.jpg" alt="Family Room">
+                <h3>Family Room</h3>
+                <p>Perfect for families, with ample space and kid-friendly features.</p>
+                <a href="family-room.html" class="button">View Details</a>
+            </div>
+        </section>
+
+        <section id="poolside" class="section-container">
+            <h2>Poolside</h2>
+            <p>Relax by the poolside with refreshing drinks, surrounded by beautiful tropical scenery.</p>
+            <div class="room">
+                <img src="images/poolside.jpg" alt="Poolside Area">
+                <p>Enjoy a tranquil atmosphere by the pool with lounge chairs and ambient lighting.</p>
+                <a href="poolside.html" class="button">Explore Poolside</a>
+            </div>
+        </section>
+        
+        <section id="dining" class="section-container">
+            <h2>Dining Area</h2>
+            <p>Our dining area offers a variety of delicious cuisines prepared by our expert chefs.</p>
+            <div class="room">
+                <img src="images/diningarea.png" alt="Dining Area">
+                <p>Dine in style with a selection of gourmet dishes and a relaxed ambiance.</p>
+                <a href="dining.html" class="button">Explore Dining Area</a>
+            </div>
+        </section>
+        
+        <section id="massage-spa" class="section-container">
+            <h2>Massage Spa</h2>
+            <p>Unwind and rejuvenate at our luxurious massage spa with a variety of treatments.</p>
+            <div class="room">
+                <img src="images/massagespa.png" alt="Massage Spa">
+                <p>Relax your body and mind with our professional massage therapies and tranquil setting.</p>
+                <a href="spa.html" class="button">Explore Spa Area</a>
+            </div>
+        </section>
+        
+        <section id="party-area" class="section-container">
+            <h2>Party Area</h2>
+            <p>Celebrate in style with our spacious party area, perfect for events and gatherings.</p>
+            <div class="room">
+                <img src="images/partygaming1.png" alt="Party Area">
+                <p>Host unforgettable parties with top-notch amenities and a vibrant atmosphere.</p>
+                <a href="party.html" class="button">Explore Party Area</a>
+            </div>
+        </section>
+        
+        
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to make a booking, feel free to reach out!</p>
+            <form action="#" method="post" class="contact-form">
+                <input type="text" placeholder="Your Name" name="name" required class="input-field">
+                <input type="email" placeholder="Your Email" name="email" required class="input-field">
+                <textarea placeholder="Your Message" rows="4" name="message" required class="input-field"></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Hotel Bookings. All rights reserved.</p>
+    </footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
